@@ -4,7 +4,7 @@ excerpt: >-
   Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa
   massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing
   placerat lorem.
-date: '2019-03-08'
+date: '0002-03-08'
 thumb_image: images/buehnenausgang.jpeg
 thumb_image_alt: A pile of books on the table
 image: images/12.jpg
