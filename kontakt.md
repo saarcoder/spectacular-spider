@@ -34,7 +34,7 @@ sections:
         label: Nachricht
         default_value: Ihre Nachricht
       - input_type: checkbox
-        name: consent
+        name: Einverständnis
         label: >-
           I understand that this form is storing my submitted information so I
           can be contacted.
