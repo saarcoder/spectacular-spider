@@ -26,7 +26,7 @@ sections:
         label: Worum gehts?
         default_value: Please select
         options:
-          - Error on the site
+          - Fehler auf der Seite melden
           - Sponsorship
           - Other
       - input_type: textarea
