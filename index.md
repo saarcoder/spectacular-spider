@@ -18,7 +18,7 @@ sections:
     title: Recent Work
     subtitle: An optional subtitle of the section
     projects_number: 6
-    view_all_label: View All
+    view_all_label: Alle ansehen
     view_all_url: portfolio
   - section_id: services
     type: section_grid
