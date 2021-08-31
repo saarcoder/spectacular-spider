@@ -28,7 +28,7 @@ sections:
         options:
           - Fehler auf der Seite melden
           - Förderer
-          - Other
+          - Anderes
       - input_type: textarea
         name: message
         label: Message
