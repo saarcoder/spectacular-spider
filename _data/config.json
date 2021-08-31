@@ -27,13 +27,13 @@
                 "style": "link"
             },
             {
-                "label": "Style Guide",
-                "url": "/style-guide/",
+                "label": "Kontakt",
+                "url": "/kontakt/",
                 "style": "link"
             },
             {
-                "label": "Kontakt",
-                "url": "/kontakt/",
+                "label": "Style Guide",
+                "url": "/style-guide/",
                 "style": "link"
             }
         ]
