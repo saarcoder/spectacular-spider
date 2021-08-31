@@ -37,7 +37,7 @@ sections:
         name: Einverständnis
         label: >-
           Ich habe verstanden, dass meine persönlichen Daten gespeichert werden,
-          um mich kontaktieren zu könnenn.
+          um mich kontaktieren zu können.
     submit_label: Nachricht schicken
 seo:
   title: KontaKt
