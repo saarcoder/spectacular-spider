@@ -27,7 +27,7 @@ sections:
         default_value: Please select
         options:
           - Fehler auf der Seite melden
-          - Sponsorship
+          - Förderer
           - Other
       - input_type: textarea
         name: message
