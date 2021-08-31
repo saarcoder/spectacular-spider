@@ -6,8 +6,7 @@ sections:
     type: section_hero
     title: Kerngesund
     content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
+      In diesem Abschnitt können ein Untertitel oder ein Slogan stehen. Die empfohlene Länge sind ein bis drei Sätze, aber das ist kein Muss.
     actions:
       - label: Let's go
         url: /kontakt
@@ -15,41 +14,41 @@ sections:
   - section_id: latest-projects
     type: section_portfolio
     layout_style: mosaic
-    title: Recent Work
-    subtitle: An optional subtitle of the section
+    title: Aktuelles
+    subtitle: Optionaler Untertitel des Abschnitts
     projects_number: 6
     view_all_label: Alle ansehen
     view_all_url: portfolio
   - section_id: services
     type: section_grid
     title: Was wir tun
-    subtitle: An optional subtitle of the section
+    subtitle: Optionaler Untertitel des Abschnitts
     col_number: two
     is_numbered: true
     grid_items:
-      - title: Service Title
+      - title: Service Titel
         content: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
           ligula, cursus id molestie vel, maximus aliquet risus. Vivamus in nibh
           fringilla, fringilla.
-      - title: Service Title
+      - title: Service Titel
         content: >-
           Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
           a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
           tincidunt ut tellus.
-      - title: Service Title
+      - title: Service Titel
         content: >-
           Sed laoreet magna commodo libero euismod sodales. Nunc ac libero
           convallis, interdum ligula vel, pretium diam. Integer commodo sem at
           dui sollicitudin.
-      - title: Service title
+      - title: Service Titel
         content: >-
           Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
           nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
   - section_id: testimonials
     type: section_testimonials
     title: Was andere über uns sagen
-    subtitle: An optional subtitle of the section
+    subtitle: Optionaler Untertitel des Abschnitts
     col_number: three
     testimonials:
       - author: Sean Salazar
@@ -73,8 +72,8 @@ sections:
           convallis, interdum ligula vel, pretium diam.
   - section_id: latest-posts
     type: section_posts
-    title: Latest from the Blog
-    subtitle: An optional subtitle of the section
+    title: Neueste Blog-Artikel
+    subtitle: Optionaler Untertitel des Abschnitts
     posts_number: 3
     col_number: three
     actions:
@@ -82,29 +81,29 @@ sections:
         url: blog
         style: button
 seo:
-  title: Stackbit Exto Theme
-  description: The preview of the Exto theme
+  title: Vorlage für Kerngesund.de
+  description: Themevorlage von Stackbit
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
-      value: Stackbit Exto Theme
+    - name: "og:title"
+      value: Themevorlage von Stackbit
       keyName: property
-    - name: 'og:description'
-      value: The preview of the Exto theme
+    - name: "og:description"
+      value: Themevorlage von Stackbit
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/exto_preview.png
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
-      value: Stackbit Exto Theme
-    - name: 'twitter:description'
-      value: The preview of the Exto theme
-    - name: 'twitter:image'
+    - name: "twitter:title"
+      value: Themevorlage von Stackbit
+    - name: "twitter:description"
+      value: Themevorlage von Stackbit
+    - name: "twitter:image"
       value: images/exto_preview.png
       relativeUrl: true
 layout: advanced
