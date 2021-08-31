@@ -40,8 +40,8 @@ sections:
           can be contacted.
     submit_label: Send Message
 seo:
-  title: Contact
-  description: This is the contact page
+  title: KontaKt
+  description: Dies ist die Kontakseite
   extra:
     - name: 'og:type'
       value: website
