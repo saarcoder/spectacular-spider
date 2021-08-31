@@ -4,41 +4,40 @@ hide_title: false
 sections:
   - section_id: contact-form
     type: section_form
-    content: >-
-      Hi there! Thank you so much for your interest in working together. Please
-      fill the contact form below or send us an email at
-      [example@example.com](mailto:example@example.com).
+    content: >
+      Hallo! Vielen Dank für Ihr Interesse an Kerngesund.de! Hier können Sie ein
+      Kontaktformular ausfüllen, um uns eine  zu schicken.
     form_id: contactForm
     form_action: /thank-you
     form_fields:
       - input_type: text
         name: name
         label: Name
-        default_value: Your name
+        default_value: Ihr Name
         is_required: true
       - input_type: email
         name: email
         label: Email
-        default_value: Your email address
+        default_value: Ihre Email-Adresse
         is_required: true
       - input_type: select
         name: subject
-        label: Subject
-        default_value: Please select
+        label: Worum gehts?
+        default_value: Bitte auswählen
         options:
-          - Error on the site
-          - Sponsorship
-          - Other
+          - Fehler auf der Seite melden
+          - Förderer
+          - Anderes
       - input_type: textarea
         name: message
-        label: Message
-        default_value: Your message
+        label: Nachricht
+        default_value: Ihre Nachricht
       - input_type: checkbox
-        name: consent
+        name: Einverständnis
         label: >-
-          I understand that this form is storing my submitted information so I
-          can be contacted.
-    submit_label: Send Message
+          Ich habe verstanden, dass meine persönlichen Daten gespeichert werden,
+          um mich kontaktieren zu können.
+    submit_label: Nachricht schicken
 seo:
   title: KontaKt
   description: Dies ist die Kontakseite
