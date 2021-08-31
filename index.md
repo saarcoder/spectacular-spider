@@ -78,7 +78,7 @@ sections:
     posts_number: 3
     col_number: three
     actions:
-      - label: View Blog
+      - label: Zum Blog
         url: blog
         style: button
 seo:
