@@ -12,6 +12,11 @@
                 "style": "link"
             },
             {
+                "label": "Über uns",
+                "url": "/ueber-uns/",
+                "style": "link"
+            },
+            {
                 "label": "Portfolio",
                 "url": "/portfolio/",
                 "style": "link"
@@ -24,11 +29,6 @@
             {
                 "label": "Style Guide",
                 "url": "/style-guide/",
-                "style": "link"
-            },
-            {
-                "label": "Über uns",
-                "url": "/ueber-uns/",
                 "style": "link"
             },
             {
