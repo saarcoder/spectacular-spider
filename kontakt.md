@@ -6,8 +6,8 @@ sections:
     type: section_form
     content: >
       Hallo! Vielen Dank für Ihr Interesse an Kerngesund.de! Hier können Sie ein
-      Kontaktformular ausfüllen, um uns eine \<a
-      href="mailto:info@1fach-bewegen.de">E-Mail\</a> zu schicken.
+      Kontaktformular ausfüllen, um uns eine
+      \[E-Mail]\(mailto:info@1fach-bewegen.de) zu schicken.
     form_id: contactForm
     form_action: /thank-you
     form_fields:
