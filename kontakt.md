@@ -24,7 +24,7 @@ sections:
       - input_type: select
         name: subject
         label: Worum gehts?
-        default_value: Please select
+        default_value: Bitte auswählen
         options:
           - Fehler auf der Seite melden
           - Förderer
