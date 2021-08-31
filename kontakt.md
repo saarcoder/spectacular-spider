@@ -36,8 +36,8 @@ sections:
       - input_type: checkbox
         name: Einverständnis
         label: >-
-          I understand that this form is storing my submitted information so I
-          can be contacted.
+          Ich habe verstanden, dass s storing my submitted information so I can
+          be contacted.
     submit_label: Nachricht schicken
 seo:
   title: KontaKt
