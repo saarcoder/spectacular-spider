@@ -4,7 +4,7 @@ subtitle: Optional Project Subtitle
 date: '2018-12-18'
 thumb_image: images/marktplatz.jpeg
 thumb_image_alt: A handheld game console on a yellow background
-image: images/6.jpg
+image: images/marktplatz.jpeg
 image_alt: A handheld game console on a yellow background
 seo:
   title: Project Title 6
