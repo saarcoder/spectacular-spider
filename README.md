@@ -1,6 +1,6 @@
 # ✨ spectacular-spider ✨
 
-<img src="https://github.stackbit.com/images/exto-demo-1024x768.png" width="600">
+<img src="https://github.com/images/exto-demo-1024x768.png" width="600">
 
 [Jekyll](https://jekyllrb.com)-Seite mit Git als [CMS](https://en.wikipedia.org/wiki/Content_management_system). Seiten-Editor: [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes). Build-Zeit: unter einer Minute.
 
