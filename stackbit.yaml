@@ -14,11 +14,11 @@ logicFields:
 models:
   config:
     type: data
-    label: Site Configuration
+    label: Seitenkonfiguration
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: Site title
         required: true
       - type: string
@@ -33,7 +33,7 @@ models:
         description: A square icon that represents your website
       - type: enum
         name: color_scheme
-        label: Color Scheme
+        label: Farbschema
         description: The color scheme used for the site.
         options:
           - light
@@ -42,7 +42,7 @@ models:
         required: true
       - type: enum
         name: accent_color
-        label: Accent Color
+        label: Akzent-Farbe
         description: The accent color of the site.
         options:
           - pink
@@ -54,40 +54,40 @@ models:
         required: true
       - type: model
         name: header
-        label: Header Configuration
+        label: Header-Konfiguration
         models:
           - header
       - type: model
         name: footer
-        label: Footer Configuration
+        label: Footer-Konfiguration
         models:
           - footer
     file: config.json
   header:
     type: object
-    label: Header Configuration
+    label: Header-Konfiguration
     labelField: title
     fields:
       - type: string
         name: title
-        label: Header Title
+        label: Header-Titel
         description: The title displayed in the header if no logo image added.
       - type: image
         name: logo_img
-        label: Logo Image
+        label: Logo-Bild
         description: The logo image displayed in the header.
       - type: string
         name: logo_img_alt
-        label: Logo Image Alt Text
+        label: Logo-Bild Alternativtext
         description: The alt text of the logo image.
       - type: boolean
         name: has_nav
-        label: Enable Navigation Menu
+        label: Navigations-Menü aktivieren
         description: Display the navigation menu bar in the header.
         default: true
       - type: list
         name: nav_links
-        label: Navigation Links
+        label: Navigations-Links
         description: List of navigation links.
         items:
           type: model
@@ -95,12 +95,12 @@ models:
             - action
   footer:
     type: object
-    label: Footer Configuration
+    label: Footer-Konfiguration
     labelField: content
     fields:
       - type: string
         name: content
-        label: Footer Content
+        label: Footer-Inhalt
         description: The copyright text displayed in the footer.
       - type: list
         name: links
@@ -112,12 +112,12 @@ models:
             - action
       - type: boolean
         name: has_social
-        label: Enable Social Links
+        label: Links auf soziale Netzwerke aktivieren
         description: Display social links in the footer.
         default: true
       - type: list
         name: social_links
-        label: Social Links
+        label: Liste von Links auf soziale Netzwerke
         description: List of social links in the footer.
         items:
           type: model
@@ -125,22 +125,22 @@ models:
             - action
   advanced:
     type: page
-    label: Advanced Page
+    label: Layoutschema Advanced
     layout: advanced
     hideContent: true
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: The title of the page.
         required: true
       - type: boolean
         name: hide_title
-        label: Hide page title
+        label: Seitentitel verbergen
         default: true
       - type: list
         name: sections
-        label: Sections
+        label: Sektionen
         description: Page sections
         items:
           type: model
@@ -167,20 +167,20 @@ models:
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: The title of the page.
         required: true
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The text shown just below the page title.
       - type: boolean
         name: hide_title
-        label: Hide page title and subtitle
+        label: Seitentitel und Untertitel verbergen
         default: false
       - type: enum
         name: col_number
-        label: Columns
+        label: Spalten
         description: The number of posts in a row.
         options:
           - two
@@ -202,16 +202,16 @@ models:
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: The title of the page.
         required: true
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The text shown just below the page title.
       - type: enum
         name: layout_style
-        label: Layout Style
+        label: Layout-Stil
         description: The style of the portfolio layout.
         options:
           - mosaic
@@ -223,7 +223,7 @@ models:
           - stackbit_page_meta
   page:
     type: page
-    label: Page
+    label: Seite
     layout: page
     exclude:
       - blog/**
@@ -231,20 +231,20 @@ models:
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: The title of the page
         required: true
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The text shown just below the page title.
       - type: image
         name: image
-        label: Image
+        label: Bild
         description: The image shown below the page title and subtitle.
       - type: string
         name: image_alt
-        label: Image Alt Text
+        label: Alternativtext Bild
         description: The alt text of the image.
       - type: model
         name: seo
@@ -253,42 +253,42 @@ models:
   post:
     type: page
     urlPath: '/blog/{slug}'
-    label: Post
+    label: Beitrag
     layout: post
     folder: blog
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: The title of the post
         required: true
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The text shown just below the post title.
       - type: date
         name: date
-        label: Date
+        label: Datum
         required: true
       - type: image
         name: thumb_image
-        label: Image (Blog Feed)
+        label: Bild (Blog)
         description: The image shown in the blog feed.
       - type: string
         name: thumb_image_alt
-        label: Image Alt Text (Blog Feed)
+        label: Alternativtext Bild (Blog)
         description: The alt text of the blog feed image.
       - type: image
         name: image
-        label: Image (Single Post)
+        label: Bild (Einzel-Beitrag)
         description: The image shown in the single post.
       - type: string
         name: image_alt
-        label: Image Alt Text (Single Post)
+        label: Alternativtext Bild (Einzel-Beitrag)
         description: The alt text of the single post image.
       - type: string
         name: excerpt
-        label: Excerpt
+        label: Zusammenfassung
         description: The excerpt of the post displayed in the blog feed.
       - type: model
         name: seo
@@ -297,38 +297,38 @@ models:
   project:
     type: page
     urlPath: '/portfolio/{slug}'
-    label: Project
+    label: Projekt
     layout: project
     folder: portfolio
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: The title of the project
         required: true
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The text shown just below the project title.
       - type: date
         name: date
-        label: Date
+        label: Datum
         required: true
       - type: image
         name: thumb_image
-        label: Image (Portfolio)
+        label: Bild (Portfolio)
         description: The image shown in the portfolio page.
       - type: string
         name: thumb_image_alt
-        label: Image Alt Text (Portfolio)
+        label: Alternativtext Bild (Portfolio)
         description: The alt text of the portfolio page image.
       - type: image
         name: image
-        label: Image (Single Project)
+        label: Bild (Einzel-Projekt)
         description: The image shown in the single project.
       - type: string
         name: image_alt
-        label: Image Alt Text (Single Project)
+        label: Alternativtext Bild (Einzel-Projekt)
         description: The alt text of the single project image.
       - type: model
         name: seo
@@ -336,90 +336,90 @@ models:
           - stackbit_page_meta
   section:
     type: object
-    label: Section
+    label: Abschnitt
     labelField: title
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: The title of the section.
       - type: string
         name: section_id
-        label: Element ID
+        label: Element-ID
         description: >-
           A unique identifier that can be used when linking to this section.
           Must not contain whitespace.
   section_content:
     type: object
-    label: Content Section
+    label: Abschnitts-Inhalt
     extends:
       - section
     fields:
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The subtitle of the section.
       - type: image
         name: image
-        label: Image
+        label: Bild
         description: The image of the section.
       - type: string
         name: image_alt
-        label: Image Alt Text
+        label: Alternativtext Bild
         description: The alt text of the section image.
       - type: markdown
         name: content
-        label: Content
+        label: Inhalt
         description: The text content of the section.
   section_form:
     type: object
-    label: Form Section
+    label: Formular-Abschnitt
     extends:
       - section
     fields:
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The subtitle of the section.
       - type: markdown
         name: content
-        label: Content
+        label: Inhalt
         description: The text content of the section.
       - type: string
         name: form_id
-        label: Form ID
+        label: Formular-ID
         description: A unique identifier of the form. Must not contain whitespace.
         required: true
       - type: string
         name: form_action
-        label: Form Action
+        label: Formular-Aktion
         description: >-
           The path of your custom "success" page, if you want to replace the
           default success message.
       - type: list
         name: form_fields
-        label: Form Fields
+        label: Formular-Felder
         items:
           type: model
           models:
             - form_field
       - type: string
         name: submit_label
-        label: Submit Button Label
+        label: Titel Button Versenden
         required: true
   section_grid:
     type: object
-    label: Grid Section
+    label: Raster-Abschnitt
     extends:
       - section
     fields:
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The subtitle of the section.
       - type: enum
         name: col_number
-        label: Columns
+        label: Spalten
         description: The number of grid items in a row.
         options:
           - two
@@ -428,45 +428,45 @@ models:
         required: true
       - type: boolean
         name: is_numbered
-        label: Number the grid items
+        label: Anzahl der Raster-Elemente
         default: false
       - type: list
         name: grid_items
-        label: Grid Items
+        label: Raster-Elemente
         items:
           type: model
           models:
             - grid_item
   section_hero:
     type: object
-    label: Hero Section
+    label: Hero-Abschnitt
     extends:
       - section
     fields:
       - type: markdown
         name: content
-        label: Content
+        label: Inhalt
         description: The text content of the section.
       - type: list
         name: actions
-        label: Action Buttons
+        label: Buttons für Aktion
         items:
           type: model
           models:
             - action
   section_portfolio:
     type: object
-    label: Portfolio Section
+    label: Portfolio-Abschnitt
     extends:
       - section
     fields:
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The subtitle of the section.
       - type: enum
         name: layout_style
-        label: Layout Style
+        label: Layout-Stil
         description: The layout style of the projects section.
         options:
           - mosaic
@@ -475,35 +475,35 @@ models:
         required: true
       - type: number
         name: projects_number
-        label: Number of projects to display
+        label: Anzahl anzuzeigender Projekte
         required: true
       - type: string
         name: view_all_label
-        label: All projects button label
+        label: Button-Titel Alle Projekte
         description: The text displayed inside the button.
       - type: string
         name: view_all_url
-        label: All projects button URL
+        label: Button-URL Alle Projekte
         default: '#'
   section_posts:
     type: object
-    label: Posts Section
+    label: Abschnitt Beiträge
     extends:
       - section
     fields:
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The subtitle of the section.
       - type: number
         name: posts_number
-        label: The number of posts to display.
+        label: Anzahl anzuzeigender Beiträge.
         required: true
         default: 3
       - type: enum
         name: col_number
-        label: Columns
-        description: The number of posts in a row.
+        label: Spalten
+        description: Anzahl Beiträge in einer Zeile.
         options:
           - two
           - three
@@ -511,24 +511,24 @@ models:
         required: true
       - type: list
         name: actions
-        label: Action Buttons
+        label: Aktions-Buttons
         items:
           type: model
           models:
             - action
   section_testimonials:
     type: object
-    label: Testimonials Section
+    label: Abschnitt Testimonials
     extends:
       - section
     fields:
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Untertitel
         description: The subtitle of the section.
       - type: enum
         name: col_number
-        label: Columns
+        label: Spalten
         description: The number of testimonials in a row.
         options:
           - two
@@ -544,7 +544,7 @@ models:
             - testimonial
   action:
     type: object
-    label: Action
+    label: Aktion
     labelField: label
     fields:
       - type: string
@@ -558,7 +558,7 @@ models:
         default: '#'
       - type: enum
         name: style
-        label: Style
+        label: Stil
         options:
           - link
           - button
@@ -581,37 +581,37 @@ models:
         default: dribbble
       - type: boolean
         name: new_window
-        label: Should the link open a new tab/window
+        label: Soll der Link in einem neuen Tab/Fenster geöffnet werden
         default: false
       - type: boolean
         name: no_follow
-        label: No follow
+        label: Nicht-Folgen-Attribut
         default: false
         description: Add rel="nofollow" attribute to the link
   grid_item:
     type: object
-    label: Grid Item
+    label: Raster-Element
     labelField: title
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: The title of the grid item.
       - type: image
         name: image
-        label: Image
+        label: Bild
         description: The image of the grid item.
       - type: string
         name: image_alt
-        label: Image Alt Text
+        label: Alternativtext Bild
         description: The alt text of the grid image.
       - type: markdown
         name: content
-        label: Content
+        label: Inhalt
         description: The text content of the grid item.
       - type: list
         name: actions
-        label: Action Buttons
+        label: Aktions-Buttons
         items:
           type: model
           models:
@@ -623,30 +623,30 @@ models:
     fields:
       - type: string
         name: author
-        label: Author
+        label: Autor
         description: The author of the testimonial.
         required: true
       - type: image
         name: avatar
-        label: Author Image
+        label: Autoren-Bild
         description: The image of the testimonial author.
       - type: string
         name: avatar_alt
-        label: Author Image Alt Text
+        label: Alternativtext Autoren-Bild
         description: The alt text of the testimonial author image.
       - type: string
         name: content
-        label: Content
+        label: Inhalt
         description: The text content of the testimonial.
         required: true
   form_field:
     type: object
-    label: Form Field
+    label: Formularfeld
     labelField: name
     fields:
       - type: enum
         name: input_type
-        label: Type
+        label: Typ
         options:
           - text
           - email
@@ -674,20 +674,20 @@ models:
         description: 'The list of options, used only when the field type is "select".'
       - type: boolean
         name: is_required
-        label: Is the field required?
+        label: Ist das Feld erforderlich?
         default: false
   stackbit_page_meta:
     type: object
-    label: Page meta data
+    label: Metadaten Seite
     fields:
       - type: string
         name: title
-        label: Title
+        label: Titel
         description: The page title that goes into the <title> tag
         default: ''
       - type: string
         name: description
-        label: Description
+        label: Beschreibung
         description: The page description that goes into the <meta name="description"> tag
         default: ''
       - type: list
